@@ -1,2 +1,3 @@
 on boot
-    chown system system  /sys/class/backlight/eeepc/brightness
+    setprop backlight.brightness_file     /sys/class/backlight/eeepc/brightness
+    setprop backlight.max_brightness_file /sys/class/backlight/eeepc/max_brightness
