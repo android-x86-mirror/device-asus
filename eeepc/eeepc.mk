@@ -1,3 +1,6 @@
+PRODUCT_COPY_FILES := \
+    $(LOCAL_PATH)/IDEACOM__IDC_6680.idc:system/usr/idc/IDEACOM__IDC_6680.idc
+
 $(call inherit-product,$(LOCAL_PATH)/../common/generic_asus.mk)
 
 # Get the touchscreen calibration tool
