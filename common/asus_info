@@ -2,6 +2,7 @@ DMIPATH=/sys/class/dmi/id
 
 asus_info()
 {
+	TOUCH=hid-multitouch
 	board=`cat $DMIPATH/product_name`
 	case "$board" in
 		70*)
@@ -9,25 +10,28 @@ asus_info()
 			;;
 		ET1602*)
 			BOARD_USES_TSLIB=true
+			TOUCH=
 			;;
 		ET2002*)
 			UVESA_MODE=${UVESA_MODE:-1600x900}
 			BOARD_USES_TSLIB=true
+			TOUCH=
 			;;
 		T91|T101)
 			UVESA_MODE=${UVESA_MODE:-1024x600}
 			BOARD_USES_TSLIB=true
+			TOUCH=
 			;;
 		T91MT|T101MT)
 			UVESA_MODE=${UVESA_MODE:-1024x600}
-			EXTMOD="$EXTMOD hid-multitouch"
 			;;
 		EP121*)
-			EXTMOD="$EXTMOD hid-multitouch"
 			;;
 		*)
 			;;
 	esac
+
+	EXTMOD="$EXTMOD $TOUCH"
 
 	return 1 # auto_detect
 }
