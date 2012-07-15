@@ -1,6 +1,6 @@
 #
 # Automatically generated make config: don't edit
-# Linux/x86 3.0.8 Kernel Configuration
+# Linux/x86 3.0.36 Kernel Configuration
 #
 # CONFIG_64BIT is not set
 CONFIG_X86_32=y
@@ -978,6 +978,7 @@ CONFIG_EXTRA_FIRMWARE=""
 # CONFIG_DEBUG_DRIVER is not set
 # CONFIG_DEBUG_DEVRES is not set
 # CONFIG_SYS_HYPERVISOR is not set
+# CONFIG_SYNC is not set
 CONFIG_CONNECTOR=m
 # CONFIG_MTD is not set
 # CONFIG_PARPORT is not set
@@ -2340,7 +2341,7 @@ CONFIG_USB_HID=y
 #
 CONFIG_HID_A4TECH=m
 CONFIG_HID_ACRUX=m
-CONFIG_HID_ACRUX_FF=m
+CONFIG_HID_ACRUX_FF=y
 CONFIG_HID_APPLE=m
 CONFIG_HID_BELKIN=m
 CONFIG_HID_CHERRY=m
