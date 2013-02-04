@@ -1,3 +1,4 @@
 # system.prop for asus-laptop
 ro.sf.lcd_density=160
+hal.sensors.kbd.type=4
 # end system.prop for asus-laptop

@@ -9,7 +9,6 @@ asus_info()
 			[ -z "$DPI" ] && DPI=120
 			;;
 		ET1602*)
-			BOARD_USES_TSLIB=true
 			TOUCH=
 			;;
 		ET2002*)
