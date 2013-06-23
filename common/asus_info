@@ -10,6 +10,7 @@ asus_info()
 			;;
 		ET1602*)
 			TOUCH=
+			echo "debug.drm.mode.force=1366x768" >> default.prop
 			;;
 		ET2002*)
 			UVESA_MODE=${UVESA_MODE:-1600x900}

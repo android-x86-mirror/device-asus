@@ -1130,7 +1130,7 @@ CONFIG_ATA_PIIX=y
 # CONFIG_SATA_SIS is not set
 # CONFIG_SATA_SVW is not set
 # CONFIG_SATA_ULI is not set
-# CONFIG_SATA_VIA is not set
+CONFIG_SATA_VIA=y
 # CONFIG_SATA_VITESSE is not set
 
 #
@@ -1173,7 +1173,7 @@ CONFIG_PATA_SCH=y
 # CONFIG_PATA_SIS is not set
 # CONFIG_PATA_TOSHIBA is not set
 # CONFIG_PATA_TRIFLEX is not set
-# CONFIG_PATA_VIA is not set
+CONFIG_PATA_VIA=y
 # CONFIG_PATA_WINBOND is not set
 
 #
